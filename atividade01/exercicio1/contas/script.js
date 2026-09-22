@@ -36,7 +36,7 @@ function tentando(){
 
    }
 
-   //exibir o resultado, fazer essa parte!
+   
    document.getElementById("resul").textContent = 
    " |maior: " + maior +
    " |menor: " + menor +
