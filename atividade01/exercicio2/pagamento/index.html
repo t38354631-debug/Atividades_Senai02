@@ -1,0 +1,52 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Caixa</title>
+</head>
+<body>
+
+    <h1>Sistema de Caixa</h1>
+
+    <form id="caixa">
+
+        <label for="preco">Preço do produto:</label>
+        <input type="number" id="preco" step="0.01" required>
+
+        <br><br>
+
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" min="1" required>
+
+        <br><br>
+
+        <label for="pagamento">Forma de pagamento:</label>
+        <select id="pagamento" required>
+            <option value="">Selecione</option>
+            <option value="dinheiro">Dinheiro</option>
+            <option value="pix">Pix</option>
+            <option value="cartao">Cartão</option>
+        </select>
+
+        <br><br>
+
+        <div id="dinheiro">
+            <label for="valorEntregue">Valor entregue pelo cliente:</label>
+            <input type="number" id="valorEntregue" step="0.01">
+        </div>
+
+        <br>
+
+        <button type="button" onclick="calcular()">Calcular</button>
+
+    </form>
+
+    <div id="resultado"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
