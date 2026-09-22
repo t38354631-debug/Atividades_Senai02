@@ -1,17 +1,13 @@
 
 function calcular() {
 
-    // Pegando os valores do HTML
+    
     let preco = Number(document.getElementById("preco").value);
     let quantidade = Number(document.getElementById("quantidade").value);
-    let pagamento = document.getElementById("pagamento").value;
-
-    // Calculando o subtotal
+    let pagamento = 
     let subtotal = preco * quantidade;
 
     let desconto = 0;
-
-    // Verificando a forma de pagamento
     if (pagamento == "dinheiro") {
         desconto = subtotal * 0.10;
     } 
@@ -22,10 +18,8 @@ function calcular() {
         desconto = 0;
     }
 
-    // Calculando o total
-    let total = subtotal - desconto;
-
-    // Criando o resultado
+    
+    let total = subtotal - 
     let resultado = `
         <h2>Resultado</h2>
         <p>Subtotal: R$ ${subtotal.toFixed(2)}</p>
@@ -33,7 +27,7 @@ function calcular() {
         <p>Total: R$ ${total.toFixed(2)}</p>
     `;
 
-    // Se o pagamento for em dinheiro
+    
     if (pagamento == "dinheiro") {
 
         let valorEntregue = Number(document.getElementById("valorEntregue").value);
