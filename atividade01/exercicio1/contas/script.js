@@ -1,7 +1,5 @@
 function tentando(){
-     console.log("a function sera executada");
-
-
+ 
   let numeros = [];
 
    numeros.push(Number(document.getElementById("n1").value));
